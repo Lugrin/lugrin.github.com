@@ -32,12 +32,13 @@ h2
 
 h3
 {
-    color:#666666; /* grey */
+    color:#555555; /* grey */
 }
 
 p,h4
 {
     margin-left:40px;
+    margin-right:20px;
 }
 
 div.language
@@ -95,6 +96,6 @@ li.download_list a
 {
     display:block;
     color:white;
-    width:80px;
+    width:10em;
 }
 /*** end download list ***/
