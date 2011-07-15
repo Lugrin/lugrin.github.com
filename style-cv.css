@@ -30,7 +30,7 @@ h2
     text-align:center;
 }
 
-h3
+h3, h3 > a
 {
     color:#555555; /* grey */
 }
@@ -45,6 +45,11 @@ div.language
 {
     text-align:right;
     margin-bottom:10px;
+}
+
+div.tools
+{
+    margin-left:80px;
 }
 
 /*** special display for personal details and photo ****/
