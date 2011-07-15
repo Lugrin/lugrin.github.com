@@ -82,6 +82,7 @@ ul.download_list
 }
 li.download_list
 {
+    width:35px;
     display:block;
     float:left;
     text-decoration:none;
@@ -93,7 +94,7 @@ li.download_list
 
 ul.download_list > li.download_list:first-child
 {
-    width:220px;
+    width:150px;
     background-color:#f55f94;
     border-left:0px solid white;
 }
