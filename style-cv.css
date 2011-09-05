@@ -52,6 +52,12 @@ div.tools
     margin-left:80px;
 }
 
+div.tools:before
+{
+    font-weight:bold;
+    content: ">";
+}
+
 /*** special display for personal details and photo ****/
 
 p.personal_details
