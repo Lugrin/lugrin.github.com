@@ -1,16 +1,7 @@
 body 
 {
-/*    background-color:#22f5ab; */
     font-family:Verdana, Arial, sans-serif;
     margin: 30px;
-/*    margin: 0px 25px 25px 25px; /* top right bottom left */
-
-    /* put my photo on the right top */
-/*    background-image:url('photo.jpg');
-    background-repeat:no-repeat;
-    background-position:right top;
-*/
-
 }
 
 div.wrap
@@ -26,7 +17,7 @@ div.wrap
 h2
 {
     /*color:#222222; */
-    background-color:#5b1cfc;
+    background-color:#1cbdfc;
     text-align:center;
 }
 
@@ -39,12 +30,6 @@ p,h4
 {
     margin-left:40px;
     margin-right:20px;
-}
-
-div.language
-{
-    text-align:right;
-    margin-bottom:10px;
 }
 
 div.tools
@@ -77,37 +62,11 @@ img
     margin-bottom:2px;
 }
 
-/*** download list ***/
-ul.download_list
-{
-    width:100%;
-    padding:0;
-    margin:0px 0pt 2px 0pt;
-    list-style-type:none;
-    float:left;
+ul {
+    list-style: outside disc;
+    margin-left: 1em;
 }
-li.download_list
-{
-    width:35px;
-    display:block;
-    float:left;
-    text-decoration:none;
-    padding:0.2em 0.6em;
-
-    background-color:#f6226c;
-    border-left:1px solid white;
+ul li {
+    position: relative;
+    padding-right: 1em;
 }
-
-ul.download_list > li.download_list:first-child
-{
-    width:150px;
-    background-color:#f55f94;
-    border-left:0px solid white;
-}
-li.download_list a
-{
-    display:block;
-    color:white;
-    width:10em;
-}
-/*** end download list ***/
