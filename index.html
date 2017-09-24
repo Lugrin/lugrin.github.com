@@ -12,7 +12,6 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="style-cv.css"/>
 
-
     <meta name="description" content="Laurie Lugrin's Curriculum Vitae"/>
     <meta name="keywords" content="Laurie Lugrin, cv, Curriculum Vitae, data scientist"/>
 
@@ -29,6 +28,7 @@
 
 </head>
 
+
 <body id="top" class="cv">
 
 <div class="wrap">
@@ -37,133 +37,189 @@
 
 <h1>Laurie Lugrin</h1>
 
+R&D engineer working in NLP for marketing. <br/>
+Looking for my next data science job.
+
 <p class="personal_details">
     <a href="mailto:laurie.lugrin@gmail.com">laurie.lugrin@gmail.com</a><br/>
     +44 77 60 588 345<br/>
-    33B Great James Street, London WC1N 3HB, UK<br/>
+    London, UK<br/>
 </p>
 
 <a href="downloads/lugrin.pdf">cv (pdf)</a>
 
+<!-- ------------------------------------- -->
+
 <h2 class="just_after_personal_details">Skills</h2>
 
-<h3>Personal skills</h3>
+<!-- <h3>Personal skills</h3>
 
-<ul>
-    <li> Fast and enthusiastic learner.</li>
-    <li> Analytical and creative thinker.</li>
-    <li> People-oriented and cooperative.</li>
-</ul>
-
-<!--
 Strong communication skills: Taught 150h at the university. Daily interactions with analysts and underwriters.
 Quick learner: business domain in the reinsurance company, theory in my internship in Toronto.
-problem solving and analytical skills, troubleshooting skills
-Ability and desire to solve complex problems
-self-starter, Self motivated team player
-well organized, Attention to detail and methodical
-child-like curiosity
 -->
 
-<h3>Technologies</h3>
+<h3> Data Science </h3>
 
+<h4> Natural Language Processing (NLP) </h4>
 <ul>
-    <li> C++, C, Python, Shell scripting.</li>
-    <li> Linux.</li>
-    <li> Git, Mercurial.</li>
-    <li> Pycharm, Eclipse.</li>
+    <li> entity linking, word embeddings, ontologies, user modelling </li>
+    <li> also interested in: information retrieval </li>
+</ul>
+<div class="tools"> Python: nltk, gensim, textblob </div>
+
+<h4> Machine Learning </h4>
+<ul>
+    <li> stats, general supervised and unsupervised learning, recommender systems, Bayesian programming </li>
+    <li> also interested in: times series, reinforcement learning, neural networks </li>
+</ul>
+<div class="tools"> Python: numpy, pandas, sklearn, pyMC3 </div>
+<div class="tools"> weka </div>
+
+<h4> Data viz </h4>
+<div class="tools"> Python: matplotlib, bokeh for interactive visualisation </div>
+
+<h4> Data engineering </h4>
+<div class="tools"> mySQL, neo4j graph database, mongoDB </div>
+<div class="tools"> Python: luigi for automating data pipelines </div>
+
+<h4> Programming and Computer Science </h4>
+<ul>
+    <li> algorithms and data structures, formal verification </li>
+</ul>
+<div class="tools"> C++: STL, boost, gtests </div>
+<div class="tools"> Bash, jq, ack-grep </div>
+<div class="tools"> Python, Scala (Spark), Octave/Matlab </div>
+<div class="tools"> Markdown, LaTeX </div>
+<div class="tools"> IntelliJ, Eclipse, Sublime Text 3 </div>
+<div class="tools"> Linux, git, github, jupyter notebooks, conda </div>
+
+<h4> Business </h4>
+<ul>
+    <li> curious and happy to learn about the business </li>
 </ul>
 
-<!--
-Languages
-  Proficient in: Python (Numpy, Pandas, Scikit-learn), C++ (STL, boost, gtests), C, Shell scripting
-  Familiar with: Java, SQL, Javascript, R, Octave
-Software and technologies:
-  Platform / OS: Linux
-  IDE: Pycharm, Eclipse
-  Revision control systems: Git, Mercurial
-  Framework: Agile (SCRUM)
-
-Active knowledge of Linux.
--->
-
-
-<h3>Interests</h3>
+<h4> Work methodology </h4>
 
 <ul>
-    <li> Artificial intelligence:
-        machine learning, automated reasoning.
-    </li>
-    <li> Model-checking.</li>
+    <li> Agile </li>
 </ul>
 
 <h3>Languages</h3>
 
 <ul>
     <li> French: mother tongue.</li>
-    <li> English: experienced, lived in Canada for 3 months, in Ireland for 3 years, now living in the UK.<br/>
+    <li> English: experienced, lived in Canada for 3 months, in Ireland for 3 years, now living in the UK for the last 3 years.<br/>
         (<a href="http://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages">CEFR</a> B2 in 2008,
         <a href="http://www.ielts.org">IELTS</a> 7.5/9 in 2011).
     </li>
     <li> German: academic knowledge, lived in Germany for 5 weeks.</li>
 </ul>
 
+<!-- ------------------------------------- -->
+
 <h2>Professional experience</h2>
 
+<!-- ------------------------------------- -->
 
 <h3>January 2015 - now:
-    R&D engineer at <a href="http://www.idioplatform.com/">idio</a>, London, UK</h3>
-
-<h3>January 2012 - December 2013:
-    Software engineer at RenaissanceRe, Dublin, Ireland</h3>
+    R&D NLP engineer at <a href="http://www.idioplatform.com/"><i>idio</i></a>, London, UK</h3>
 
 <p>
-    I worked in the back-end team in a reinsurance company.
-    My team was responsible for providing a risk estimation software that is accurate and fast.
+    <i>idio</i> helps brands have a data-driven marketing strategy. We analyse online content and customer journeys through the website to serve relevant content that will maximise engagement and conversion.
+    As part of the research team, I worked on the core semantic text analysis.
 </p>
 
-<h4>Rewrote the compensation software, improving maintainability and extensibility.</h4>
+<h4>NERD engine</h4>
+
+<ul>
+    <li> Developed a state-of-the-art named-entity recognition and disambiguation software, beating dbpedia-spotlight, zemanta and Alchemy in terms of F1-score on academic datasets. </li>
+    <li> Built various tools to evaluate and debug our NLP engine:
+      <ul>
+      <li> an evaluation tool used with large data sets for model selection and tuning; </li>
+      <li> a non-regression tool with detailled feedback for manual attention; </li>
+      <li> a tool that creates test sets covering specific clients' needs; </li>
+      <li> a grid-search-inspired hyper-parameter optimisation tool with visual output to provide insights on the role of each parameter. </li>
+      </ul>
+    </li>
+</ul>
+
+<h4>Ontology</h4>
+
+<ul>
+  <li> Built an ontology incorporating different data sources. It is regularly updated with new topics imported from open-source knowledge bases. This allows us to pick up the latest topics about new technologies and current affairs.</li>
+  <li>Implemented a sanity check tool for our ontology, identifying anomalies such as isolated entities and duplicated entities, so that we are more confident in releasing massive updates.</li>
+</ul>
+
+<h4>Pipeline automation</h4>
+
+<ul>
+    <li>Maintained and improved our pipeline automation tool. We can rebuild any intermediate or production data set in one command line.</li>
+</ul>
+
+<h4>Communication</h4>
+
+<ul>
+  <li>Presented the work done to non-technological teams during Agile sprint reviews.</li>
+</ul>
+
+<!-- ------------------------------------- -->
+
+<h3>January 2012 - December 2013:
+    Risk software engineer at <i>RenaissanceRe</i>, Dublin, Ireland</h3>
 
 <p>
-    This software determines the amount of money the client is entitled to claim,
-    given the damage sustained and the contract terms.
+    <i>RenaissanceRe</i> is a re-insurance company with a large volume of contracts signed daily. As part of the backend team, I made sure the analysts had the best tools to understand and quote their deals.
+</p>
+
+<h4>Rewrote the compensation software</h4>
+
+<p>
+    This software uses Monte-Carlo methods to determine the amount of money the client is entitled to claim, given the damage sustained and the contract terms.
 </p>
 
 <ul>
     <li>
         gathered requirements from the business analyst, raising issues when the legacy software behaved inconsistently.
     </li>
-    <li>
+<!--     <li>
         software architecture, development, testing.
     </li>
+ -->    <li>
+        improved speed, maintainability and extensibility.
+    </li>
     <li>
-        data modelling and migration: designed a new encoding format for contract terms,
-        replacing CSV with JSON. Wrote a migration tool to transform the legacy data into the new format.
-        Cooperated with the front-end team and users.
+        cooperated with the front-end team and users.
+    </li>
+    <li>
+        data modelling and migration: Designed a data format for contract terms that is intuitive and has a straightforward implementation to replace the legacy non-documented data format and the corresponding cryptic processing logic. Proved the equivalence of the two representations. Wrote a migration tool to transform the legacy files.
     </li>
     <li>
         support and maintenance: interactions with business analysts and underwriters.
     </li>
 </ul>
 
-<h4>Contributed to the geography-aware disaster simulation software.</h4>
+<h4>Built a human-error simulation software</h4>
 
 <p>
     This software predicts the damage that clients would undergo in different scenarios,
     such as natural catastrophes or human errors.
-
-    I developed targeted tools to model reinsurance coverage for cases of professional fault,
-    catering for various parameters such as profession, region and type of insurance.
 </p>
 
-<div class="tools"> C++, Python, Eclipse, PyCharm, Mercurial, VMware</div>
+<ul>
+    <li>
+        requirement analysis with analysts, implementation, optimisation.
+    </li>
+</ul>
+
+<div class="tools"> C++, Python (pandas), Eclipse, PyCharm, Mercurial</div>
+
+<!-- ------------------------------------- -->
 
 <h3>June - August 2011:
-    Software engineer at Fermat, Montbonnot, France</h3>
+    Software engineer at <i>Moody's analytics</i>, Montbonnot, France</h3>
 
 <p>
-    Worked on a software that computes the amount of money the bank must put aside as a safety net for its loans.
-    Updated the calculation and the database schema according a new regulation.
+    Developed a rule-based system that determines the safety-net threshold for bank loans according to regulations.
 </p>
 
 <!--
@@ -175,35 +231,44 @@ http://www.moodysanalytics.com/Products-and-Solutions/Enterprise-Risk-Solutions/
 
 <div class="tools"> C++, PL/SQL, Visual studio, Perforce, Agile development (SCRUM)</div>
 
+<!-- ------------------------------------- -->
+
 <h3>Oct 2009 - Dec 2010: Research assistant and part-time teacher,
-    Verimag Lab and Joseph Fourier University, Grenoble, France</h3>
+    <i>Verimag Lab</i> and <i>Joseph Fourier University</i>, Grenoble, France</h3>
 
 <p>
-    Designed and implemented a method for comparing consumption models for wireless sensor networks.
-    Studied the data sheet of the embedded radio device CC1100 to confirm the performance of my implementation.
+    Designed a method for comparing energy consumption models of wireless sensor networks. Performed a case-study using the data sheet of the embedded radio device CC1100 to confirm the performance and capabilities of my implementation.
     Gave many presentations of my work in English as well as in French.
-</p>
-
-<p>
-    Taught 90 hours of tutorials and practical labs:
-    C programming, algorithms, regular expressions, automata.
 </p>
 
 <div class="tools"> Python, C, Unix shell, Latex, Emacs, Git</div>
 
+<p>
+    Taught 90 hours of tutorials and practical labs:
+    C programming, algorithms, formal languages, automata theory.
+</p>
+
+
+<!-- ------------------------------------- -->
+
 <h3>2008 - 2009 (~60h):
-    Computer Science tutor at Joseph Fourier University, Grenoble, France</h3>
+    Computer Science tutor at <i>Joseph Fourier University</i>, Grenoble, France</h3>
 
 <p>
     Taught 1st and 2nd-year university students in groups and individually, alongside my studies.
 </p>
 
-<h3>Summer 2008:
-    Research intern at the University of Toronto, Canada</h3>
+<!-- ------------------------------------- -->
+
+<h3>May - Sept 2008:
+    Research intern at the <i>University of Toronto</i>, Canada</h3>
 
 <p>
-    Contributed to a software model-checker.
-    This tool built an simplified symbolic model of the software and proved properties expressed in mu-calculus.
+    Studied temporal logics and model-checking theory prior to the internship.
+</p>
+
+<p>
+    Contributed to a software model-checker, that builds an simplified symbolic model of the software and proves properties expressed in mu-calculus.
 </p>
 
 <p>
@@ -252,7 +317,7 @@ abstract interpretation
 <div class="tools"> Java, Python, Emacs, SVN</div>
 
 <h3>Summer 2006:
-    Intern at Grenoble Informatics Laboratory, Grenoble, France</h3>
+    Intern at <i>Grenoble Informatics Laboratory</i>, Grenoble, France</h3>
 
 <p>
     Contributed to an intelligent tutoring system for medical surgeons.
@@ -261,6 +326,8 @@ abstract interpretation
 
 <div class="tools"> SQL, UML, XHTML, CSS2</div>
 
+<!-- ------------------------------------- -->
+
 <h2>Projects</h2>
 <!--Highlighted projects-->
 
@@ -268,9 +335,9 @@ abstract interpretation
 
 <p>
     Took part in a <a href="https://brilliant.org/competitions/hunger-games/">contest</a>
-    organised by <a href="http://brilliant.org/">brilliant.org</a> where participants had to write bots
-    that fight and/or cooperate to survive in a game theory setting,
-    similar to an <a href="http://en.wikipedia.org/wiki/Prisoner_dilemma#The_iterated_prisoners.27_dilemma">
+    organised by <a href="http://brilliant.org/">brilliant.org</a> where participants had to write <b>bots</b>
+    that fight and/or cooperate to survive in a <b>game theory</b> setting,
+    similar to an <a href="https://en.wikipedia.org/wiki/Prisoner%27s_dilemma#The_iterated_prisoner.27s_dilemma">
     iterated prisoner's dilemma</a>.
     My bot was one of the 45 survivors amongst the 440 participants.
 </p>
@@ -280,8 +347,8 @@ abstract interpretation
 <h3>Oct 2010 - Feb 2011</h3>
 
 <p>
-    Designed a hardware-based <a href="https://github.com/funchal/frogvivor">frogger game</a>.
-    Conducted a requirement analysis, wrote a prototype, implemented on FPGA.
+    Designed a hardware-based <a href="https://github.com/funchal/frogvivor"><b>frogger game</b></a>.
+    Conducted a requirement analysis, wrote a prototype, implemented on <b>FPGA</b>.
 </p>
 
 <div class="tools"> C, SDL graphics/sound, VHDL, Git</div>
@@ -289,16 +356,19 @@ abstract interpretation
 <h3>Late 2008</h3>
 
 <p>
-    Developed an IRC bot which makes rhymes and funny
+    Developed an <b>IRC bot</b> which makes rhymes and funny
     remarks interacting with the discussion.
+    It was occasionally mistaken for a human.
 </p>
 
 <div class="tools"> Python, Bazaar, IRC protocol</div>
 
+<!-- ------------------------------------- -->
+
 <h3>Feb 2008</h3>
 
 <p>
-    Designed and implemented a compiler for a functional language with process parallelism.
+    Designed and implemented a <b>compiler</b> for a functional language with process parallelism.
 </p>
 
 <div class="tools"> Java, C</div>
@@ -306,17 +376,19 @@ abstract interpretation
 <h3>May - June 2007</h3>
 
 <p>
-    Designed and implemented a clone of the puzzle game <a href="http://www.blokus.com/">Blokus</a>,
+    Designed and implemented a clone of the <b>puzzle game</b> <a href="http://www.blokus.com/">Blokus</a>,
     including an AI with configurable strengths.
 </p>
 
 <h3>Summer 2007</h3>
 
 <p>
-    Developed a snake game.
+    Developed a <b>snake game</b>.
 </p>
 
 <div class="tools"> Python, Pygame, Emacs, Bazaar</div>
+
+<!-- ------------------------------------- -->
 
 <h3>2006</h3>
 
@@ -325,6 +397,8 @@ abstract interpretation
 </p>
 
 <div class="tools"> C, Emacs</div>
+
+<!-- ------------------------------------- -->
 
 <h2>Education</h2>
 
@@ -339,46 +413,50 @@ https://www.udacity.com/course/ud032
 -->
 
 <p>
-    Coursera class on <a href="https://www.coursera.org/course/statistics">Data Analysis and Statistical Inference</a> (online),
-    (<a href="downloads/coursera-dasi-2014.pdf">statement of accomplishment</a>) <br/>
-    Duke University
+    <a href="https://www.coursera.org/course/statistics"><b>Data Analysis and Statistical Inference</b></a>,
+    <i>Duke University</i>
+    <br/>
+    on coursera (<a href="downloads/coursera-dasi-2014.pdf">certificate</a>)
     <!-- taught by Mine Çetinkaya-Rundel -->
 
 </p>
 
 <p>
-    Coursera class on <a href="http://www.coursera.org/course/ml">Machine Learning</a> (online),
-    (<a href="downloads/coursera-ml-2014.pdf">statement of accomplishment</a>) <br/>
-    Stanford University
+    <a href="http://www.coursera.org/course/ml"><b>Machine Learning</b></a>,
+    <i>Stanford University</i>
+    <br/>
+    on coursera (<a href="downloads/coursera-ml-2014.pdf">certificate</a>)
     <!-- taught by Andrew Ng -->
 
 </p>
 
 <p>
-    Coursera class on <a href="http://www.coursera.org/course/rprog">R programming</a> (online),
-    with distinction
-    (<a href="downloads/coursera-rprog-2014.pdf">statement of accomplishment</a>) <br/>
-    Johns Hopkins University
+    <a href="http://www.coursera.org/course/rprog"><b>R programming</b></a>,
+    <i>Johns Hopkins University</i>
+    <br/>
+    on coursera (<a href="downloads/coursera-rprog-2014.pdf">certificate</a>) 
     <!-- taught by Roger D. PengJohns, Jeff LeekJohns, Brian Caffo -->
-
 </p>
 
 <p>
-    Coursera class on <a href="http://www.coursera.org/course/gametheory">Game Theory</a> (online),
-    with distinction
-    (<a href="downloads/coursera-gametheory-2014.pdf">statement of accomplishment</a>) <br/>
-    Stanford University and The University of British Columbia <br/>
+    <a href="http://www.coursera.org/course/gametheory"><b>Game Theory</b></a>,
+    <i>Stanford University</i> and <i>The University of British Columbia</i>
+    <br/>
+    on coursera (<a href="downloads/coursera-gametheory-2014.pdf">certificate</a>)
     <!--taught by Matthew O. Jackson, Kevin Leyton-Brown, Yoav Shoham,-->
+    <br/>
+    Zero-sum games, prisoners dilemma, repeated games, Bayesian games, coalitional games.
 </p>
 
 <h3>2009</h3>
 
 <p>
-    <i>M.Sc.</i>
+    <b><i>M.Sc.</i>
     on Computer Science,
-    minor on Artificial Intelligence and Web,
-    with high honors <br/>
-    Joseph Fourier University, Grenoble, France.
+    minor on Artificial Intelligence and Web</b>,
+    with high honours <br/>
+    Joseph Fourier University, Grenoble, France. <br/>
+    Coursework included Machine Learning, Information Retrieval, Knowledge Representation and Inference, Semantic Web, Operations Research.
 </p>
 
 <!--
@@ -396,20 +474,22 @@ know when and how to apply ML techniques
 -->
 
 <p>
-    <a href="http://en.wikipedia.org/wiki/Magister_%28degree%29#France"><i>Magistère</i></a> on Computer Science,
+    <b><i>Magistère</i> on Computer Science</b>,
     with high honours <br/>
-    Magistère is an excellence course offered to the top 10% students with emphasis on research.<br/>
+    <a href="http://en.wikipedia.org/wiki/Magister_%28degree%29#France"><i>Magistère</i></a> is an excellence course offered to the top 10% students with emphasis on research.<br/>
     Joseph Fourier University, Grenoble, France.
 </p>
 
 <h3>2007</h3>
 
 <p>
-    <i>B.Sc.</i>
-    on Computer Science,
+    <b><i>B.Sc.</i>
+    on Computer Science</b>,
     with high honors <br/>
     Joseph Fourier University, Grenoble, France.
 </p>
+
+<!-- ------------------------------------- -->
 
 <h2>Hobbies</h2>
 
