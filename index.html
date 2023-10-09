@@ -39,50 +39,31 @@ R&amp;D engineer with an interest in Machine Learning.
 
 <h2 class="just_after_personal_details">Skills and interests</h2>
 
-<h3> Data Science </h3>
+<h3> Machine Learning </h3>
+<div class="tools"> stats, times series, supervised and unsupervised learning, Bayesian programming, neural networks, convex optimisation </div>
+<div class="tools"> Python: NumPy, pandas, sklearn, pyMC3, TensorFlow </div>
+<!--<div class="tools"> weka </div>-->
 
-<h4> Natural Language Processing (NLP) </h4>
-<ul>
-    <li> entity linking, word embeddings, ontologies, user modelling, information retrieval </li>
-</ul>
+<h3> Natural Language Processing (NLP) </h3>
+<div class="tools"> named entity recognition, entity linking, word embeddings, ontologies, user modelling, information retrieval </div>
 <div class="tools"> Python: nltk, gensim, textblob </div>
 
-<h4> Machine Learning </h4>
-<ul>
-    <li> stats, times series, supervised and unsupervised learning, recommender systems, Bayesian programming, neural networks </li>
-</ul>
-<div class="tools"> Python: NumPy, pandas, sklearn, pyMC3 </div>
-<div class="tools"> weka </div>
-
-<h4> Data viz </h4>
+<h3> Data visualisation </h3>
 <div class="tools"> Python: matplotlib, seaborn, bokeh for interactive visualisation </div>
 
-<h4> Data engineering </h4>
-<div class="tools"> mySQL, neo4j graph database, mongoDB </div>
-<div class="tools"> Python: Luigi for automating data pipelines </div>
-<div class="tools"> AWS: EC2, s3, SNS, SES </div>
+<h3> Data engineering </h3>
+<div class="tools"> Databases: mySQL, neo4j graph database and Cypher query language, mongoDB, Clickhouse </div>
+<div class="tools"> Automation: Luigi for automating data pipelines </div>
+<div class="tools"> Cloud platform: AWS (EC2, s3, SNS, SES) </div>
 
-<h4> Programming and Computer Science </h4>
-<ul>
-    <li> algorithms and data structures, formal verification </li>
-</ul>
+<h3> Programming and Computer Science </h3>
+<div class="tools"> algorithms and data structures, formal verification </div>
 <div class="tools"> C++: STL, boost, gtests </div>
 <div class="tools"> Bash, jq, ack-grep </div>
 <div class="tools"> Python, Scala (Spark), Octave/Matlab </div>
 <div class="tools"> Markdown, LaTeX </div>
 <div class="tools"> IntelliJ, Eclipse, Sublime Text 3 </div>
 <div class="tools"> Linux, git, github, jupyter notebooks, conda, pipenv </div>
-
-<h4> Business </h4>
-<ul>
-    <li> curious and happy to learn about the business </li>
-</ul>
-
-<h4> Work methodology </h4>
-
-<ul>
-    <li> Agile </li>
-</ul>
 
 <h3>Languages</h3>
 
@@ -98,6 +79,28 @@ R&amp;D engineer with an interest in Machine Learning.
 <!-- ------------------------------------- -->
 
 <h2>Professional experience</h2>
+
+
+<h3>January 2022 - August 2023:
+    Senior ML Software Engineer at <a href="https://www.senseon.io/"><i>SenseOn</i></a>, London, UK</h3>
+<p>
+    <i>SenseOn</i> is a cyber-threat detection platform. As part of the ML team, I worked with security analysts to build several detectors of suspicious activity.
+</p>
+
+<h4>Code obfuscation</h4>
+<p>
+    Detecting obfuscated Powershell scripts. I combined a regex approach to cover simple obfuscations, and trained an LSTM on a publicly-available labelled dataset to cover more advanced obfuscation techniques, resulting in an F2-score of 87%.
+</p>
+
+<h4>Unexpected activity</h4>
+<p>
+    I designed a potentially malicious activity detector which combines a convolution-based algorithm that predicts users’ working hours and a classifier of interactive programs.
+</p>
+
+<h4>Malware beaconing</h4>
+<p>
+    I implemented a tool to detect suspicious programs that attempt network connections at semi-regular intervals.
+</p>
 
 <!-- ------------------------------------- -->
 
@@ -160,7 +163,7 @@ R&amp;D engineer with an interest in Machine Learning.
 <!-- ------------------------------------- -->
 
 <h3>January 2015 - October 2017:
-    R&D NLP engineer at <a href="https://idio.ai/"><i>idio</i></a>, London, UK</h3>
+    R&D NLP engineer at <a href="https://www.optimizely.com/idio/"><i>idio</i></a>, London, UK</h3>
 
 <p>
     <i>idio</i> helps brands have a marketing strategy driven by data. We analyse online content and customer journeys through the website to serve relevant content that will maximise engagement and conversion.
@@ -170,7 +173,7 @@ R&amp;D engineer with an interest in Machine Learning.
 <h4>NERD engine</h4>
 
 <ul>
-    <li> Developed a state-of-the-art Named-Entity Recognition and Disambiguation system, beating dbpedia-spotlight, Zemanta and Alchemy in F1-score on academic data sets. </li>
+    <li> Developed a state-of-the-art <a href="https://en.wikipedia.org/wiki/Named-entity_recognition">Named-Entity Recognition</a> and <a href="https://en.wikipedia.org/wiki/Entity_linking">Disambiguation</a> system, beating dbpedia-spotlight, Zemanta and Alchemy in F1-score on academic data sets. </li>
     <li> Built various evaluation tools:
       <ul>
       <li> a precision and recall evaluator for model selection and fine tuning; </li>
@@ -192,12 +195,6 @@ R&amp;D engineer with an interest in Machine Learning.
 
 <ul>
     <li>Data-pipeline automation using Luigi and AWS. We can rebuild any intermediate or production dataset in one command.</li>
-</ul>
-
-<h4>Communication</h4>
-
-<ul>
-  <li>Presented the work done to non-technological teams during Agile sprint reviews.</li>
 </ul>
 
 <!-- ------------------------------------- -->
@@ -327,15 +324,14 @@ R&amp;D engineer with an interest in Machine Learning.
 <!-- ------------------------------------- -->
 
 <h2>Projects</h2>
-<!--Highlighted projects-->
 
 <h3> Aug 2013 </h3>
 
 <p>
-    Took part in a <a href="https://brilliant.org/competitions/hunger-games/">contest</a>
+    Took part in a <a href="https://web.archive.org/web/20160304014008/https://brilliant.org/competitions/hunger-games/">contest</a>
     organised by <a href="http://brilliant.org/">brilliant.org</a> where participants had to write <b>bots</b>
     that fight and/or cooperate to survive in a <b>game theory</b> setting,
-    similar to an <a href="https://en.wikipedia.org/wiki/Prisoner%27s_dilemma#The_iterated_prisoner.27s_dilemma">
+    similar to an <a href="https://en.wikipedia.org/wiki/Prisoner%27s_dilemma#The_iterated_prisoner's_dilemma">
     iterated prisoner's dilemma</a>.
     My bot was one of the 45 survivors amongst the 440 participants.
 </p>
@@ -374,14 +370,14 @@ R&amp;D engineer with an interest in Machine Learning.
 <h3>May - June 2007</h3>
 
 <p>
-    Designed and implemented a clone of the <b>puzzle game</b> <a href="http://www.blokus.com/">Blokus</a>,
+    Designed and implemented the <b>puzzle game</b> <a href="https://en.wikipedia.org/wiki/Blokus">Blokus</a>,
     including an AI with configurable strengths.
 </p>
 
 <h3>Summer 2007</h3>
 
 <p>
-    Developed a <b>snake game</b>.
+    Developed a multi-player <b>snake game</b>.
 </p>
 
 <div class="tools"> Python, Pygame, Emacs, Bazaar</div>
@@ -472,11 +468,9 @@ R&amp;D engineer with an interest in Machine Learning.
 
 <ul>
     <li>Badminton. Played in the league with <a href="http://www.facebook.com/sheriffycbadminton"><i>Sheriff badminton club</i></a> in Dublin.</li>
-    <li>Juggling and unicycling (former member of the organization Argument Massue.
-        Conducted initiation workshops.)
-    </li>
-    <li>Hiking, Kickboxing, Table tennis, <a href="http://en.wikipedia.org/wiki/Via_ferrata">Via ferrata</a>, Skiing, Cycling</li>
-    <li>Guitar, Gardening, Crochet</li>
+    <li>Juggling and unicycling. Former member of the organization Argument Massue. Conducted initiation workshops.</li>
+    <li>Hiking, Kickboxing, <a href="http://en.wikipedia.org/wiki/Via_ferrata">Via ferrata</a>, Skiing, Cycling</li>
+    <li>Guitar, Gardening, Crochet, Pottery</li>
 </ul>
 
 </div>
